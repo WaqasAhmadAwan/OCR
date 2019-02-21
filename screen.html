@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Your First Document Parser</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+
+<div id="stack_create_header">
+  <div class="field_edit_header">
+    <span class="title">
+        What type of document do you want to parse?
+        <span>
+          - Select the template which best describes your document type and confirm in the bottom right corner
+        </span>
+    </span>
+  </div>
+</div>
+
+<div id="content_pane_stack_create">
+    
+    <div class="alert alert-error" id="stack_create_template_error" style="display:none;">
+      Please select the type of document you want to parse data from.
+    </div>
+
+    <div class="stack_create_template_wrapper">
+                      <a href="#" class="stack_template_pane" data-template="invoice">
+          <i class="fa">&#xf155;</i>
+          <h3 data-label="My Invoice Parser">Invoices</h3>
+          <p>
+            Extract key data from recurring invoices, such as invoice number, due date, totals, tax numbers, line-items, ...           </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="po">
+          <i class="fa">&#xf291;</i>
+          <h3 data-label="My Purchase Orders Parser">Purchase Orders</h3>
+          <p>
+            Extract key data from purchase orders, such as purchase order number, account number, totals, line-items, ...           </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="hr_form">
+          <i class="fa">&#xf0c0;</i>
+          <h3 data-label="My Application Form Parser">Application Forms</h3>
+          <p>
+            Extract responses from application forms such as applicants name, date of birth, skills, ...          </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="contract">
+          <i class="fa">&#xf15c;</i>
+          <h3 data-label="My Contract Form Parser">Standardized Contracts</h3>
+          <p>
+            Extract responses from rental &amp; leasing contracts, warranty &amp; insurance agreements, or other form based contracts          </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="shipping_order">
+          <i class="fa">&#xf0d1;</i>
+          <h3 data-label="My Shipping Order Parser">Shipping Orders</h3>
+          <p>
+            Extract key data from shipping orders, such as tracking numbers, shipping address, account number, products, ...           </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="delivery_note">
+          <i class="far fa-newspaper"></i>
+          <h3 data-label="My Delivery Note Parser">Delivery Notes</h3>
+          <p>
+            Extract key data from delivery notes, such as tracking number, delivery date, delivery address, products, ...           </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="workorder">
+          <i class="fa">&#xf0ad;</i>
+          <h3 data-label="My Work Order Parser">Work Orders</h3>
+          <p>
+            Extract key data from work orders such as product quantities, client and order number, date, ...          </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="report">
+          <i class="fa">&#xf02f;</i>
+          <h3 data-label="My Report Parser">Generated Report</h3>
+          <p>
+            Extract dates, names, addresses and table data from SAP Crystal Reports or any other fixed layout report          </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="bank_statement">
+          <i class="far fa-credit-card"></i>
+          <h3 data-label="My Bank Statement Parser">Bank Statements</h3>
+          <p>
+            Extract key data from bank statements, such as all movements, account information, ...           </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="form">
+          <i class='fas'>&#xf0ae;</i>
+          <h3 data-label="My Filled Forms Parser">Fillable PDF Form</h3>
+          <p>
+            Extract responses from custom PDF forms, such as free form answers, checkboxes, ...          </p>
+        </a>
+                      <a href="#" class="stack_template_pane" data-template="generic">
+          <i class="far fa-file"></i>
+          <h3 data-label="My Document Parser">Miscellaneous</h3>
+          <p>
+            Start from scratch if your document does not fall in any of the listed categories ...          </p>
+        </a>
+    </div>
+  </div>
+
+  <div id="stack_create_footer" class="field_edit_footer">
+    <div class="control-group field_edit_footer_left">
+      <a href="/" class="btn btn-default">Abort</a>
+    </div>
+
+    <div id="refine_footer_center" class="control-group pull-right">
+      <label class="">Parser Name</label>
+      <input type="text" name="label" class="input-large" id="label_create_stack" placeholder="My Document Parser" value="">
+    </div>
+
+    <div id="refine_footer_buttons" class="control-group field_edit_footer_right">
+      <button type="submit" id="btn_add_stack_save" class="btn btn-primary">Click Here To Continue</button>
+    </div>
+  </div>
+
+</body>
+</html>

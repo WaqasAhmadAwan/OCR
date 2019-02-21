@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		body, html {
+			background-color: #FAFAFD;
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
+		.container {
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.container {
+			width: 940px;
+		}
+	</style>
+</head>
+<body id="login_wrap">
+
+	<div class="container-fluid">
+		<div class="container">
+			<div id="login-container">
+				<div>
+					<div class="login_content_wrap_center">
+						<a class="login_logo" href="#"><img src="images/log-in-screen-logo.png" title="parser.com"></a>
+						<div id="login_body">
+							<form action="/account/login_now" class="form-horizontal submit-once" method="post" novalidate="novalidate">
+								<input type="hidden" name="xlfFsZqL" value="Q3UoucOFl1GnY7esbfSg">
+								<input type="hidden" name="red" value="">
+								<div class="control-group">
+									<input type="text" id="email" name="email" placeholder="Your Email" class="input-block-level required email">
+								</div>
+								<div class="control-group">
+									<input type="password" id="password" placeholder="Your Password" name="password" class="input-block-level required">
+								</div>
+								<button type="submit" class="btn btn-primary input-block-level">Login</button>
+							</form>
+						</div>
+						<p class="login-footer">
+						Don't have an account? <a href="/account/signup" class="">Sign up for a free account</a><br>
+						Forgot your password? <a href="/account/forgot_password" class="">Reset password</a>
+						</p>
+	  				</div>
+				</div>
+  			</div>
+		</div>
+	</div>
+
+	
+
+</body>
+</html>
